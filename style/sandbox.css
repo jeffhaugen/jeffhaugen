@@ -1,0 +1,119 @@
+/* Bootstrap is designed with portrait phones / extra small devices
+     in mind as the default device. Might be good suit to follow.
+     (min-width: 576px) > Breakpoint for landscape phones
+
+https://getbootstrap.com/docs/4.0/layout/overview/ 
+  > Responsive Breakpoints
+*/
+
+
+:root {
+  --red: #FF0000;
+  --green: #00FF00;
+  --blue: #0000FF;
+
+  --cyan: #00FFFF;
+  --magenta: #FF00FF;
+  --yellow: #FFFF00;
+
+  --black: #000000;
+  --white: #FFFFFF;
+  --grey: #7F7F7F;
+  --light-grey: #CCCCCC;
+
+  --helvetica: Helvetica, sans-serif;
+}
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+
+.something-size {
+  min-width: 60vw;
+  min-height: 100vh;
+}
+
+.big {
+  height: 200vh;
+}
+
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+
+
+
+
+
+.box {
+  display: flex;
+  position: relative;
+}
+
+.stack-vertical {
+  flex-direction: column;
+}
+
+.stack-horizontal {
+  flex-direction: row;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  margin-left: 0;
+}
+
+.right {
+  margin-right: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+li a {
+  font-variant: small-caps;
+}
+
+li a:hover {
+  color: white;
+}
