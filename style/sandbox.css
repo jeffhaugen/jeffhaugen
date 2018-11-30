@@ -43,12 +43,6 @@ h1 {
 }
 
 
-
-.something-size {
-  min-width: 60vw;
-  min-height: 100vh;
-}
-
 .big {
   height: 200vh;
 }
