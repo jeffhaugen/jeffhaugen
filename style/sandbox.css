@@ -42,9 +42,23 @@ h1 {
   font-size: 3rem;
 }
 
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none; 
+}
+
 
 .big {
   height: 200vh;
+}
+
+.w100 {
+  width: 100%;
 }
 
 
@@ -73,6 +87,8 @@ h1 {
   position: relative;
 }
 
+
+
 .stack-vertical {
   flex-direction: column;
 }
@@ -80,6 +96,8 @@ h1 {
 .stack-horizontal {
   flex-direction: row;
 }
+
+
 
 .center {
   margin-left: auto;
@@ -102,6 +120,12 @@ h1 {
 
 
 
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+
+
+
 
 
 li a {
@@ -110,4 +134,16 @@ li a {
 
 li a:hover {
   color: white;
+}
+
+.nav-bar {
+
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  padding: 0.5rem;
 }
