@@ -28,7 +28,9 @@ https://getbootstrap.com/docs/4.0/layout/overview/
 
 
 
-
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -117,8 +119,9 @@ a {
 
 .bottom {
   position: absolute;
+  left: 0;
   bottom: 0;
-  width: 100%;
+  right: 0;
 }
 
 
@@ -140,6 +143,11 @@ a {
 
 .padding-top-3 {
   padding-top: 3rem;
+}
+
+.-padding-side {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .side-padding {
@@ -215,3 +223,19 @@ li a:hover {
   margin-right: 0.5rem;
 }
 
+
+.--sizer {
+  max-width: 75%;
+}
+
+@media (min-width: 992px) {
+  .--sizer {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .--sizer {
+    max-width: 50%;
+  }
+}
