@@ -100,15 +100,6 @@ body {
 .container {
   flex-direction: column;
   flex: 1;
-
-  /*min-width: 50%;*/
-  max-width: 750px;
-
-  padding-left: 5%;
-  padding-right: 5%;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
@@ -135,9 +126,6 @@ body {
 .nav {
   display: flex;
   flex-direction: row;
-
- /* margin-left: auto;
-  margin-right: auto;*/
 }
 
 .navlist {
@@ -156,7 +144,22 @@ body {
 
 
 
+/* I N P U T   E L E M E N T S */
 
+.button {
+  border: none;
+  background-color: white;
+  color: black;
+  
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  color: black;
+}
 
 
 

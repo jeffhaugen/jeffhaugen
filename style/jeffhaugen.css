@@ -5,12 +5,22 @@
 
 
 
- 
+/* C O N T A I N E R */
+
+.container {
+  width: 92%;
+  max-width: 750px;
+
+  /*padding-left: 5%;
+  padding-right: 5%;*/
+
+  margin-left: auto;
+  margin-right: auto;
+}
 
  /* H E A D E R */
 
 .header {
-  /*width: 100%;*/
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
@@ -31,10 +41,13 @@
   padding-bottom: 2rem;
 }
 
+.title-text a:hover {
+  color: #999999;
+}
+
 /* N A V */
 
 .nav {
-  width: 100%;
   border-top: 0.1rem solid black;
   border-bottom: 0.1rem solid black;
 }
@@ -67,6 +80,11 @@
   padding-bottom: 4rem;
 }
 
+.main p {
+  text-indent: 2rem;
+  padding-bottom: 1rem;
+}
+
 
 
 /* F O O T E R */
@@ -86,10 +104,83 @@
 
 
 
+/* B L O G */
 
+/*.open {
+  display: initial;
+}
 
+.closed {
+  display: none;
+}
+*/
+.post {
+  display: flex;
+  flex-direction: column;
+}
 
+.post-title {
+  font-family: ;
+  font-size: 2rem;
+  font-weight: ;
 
+  padding-bottom: 0.5rem;
+}
+
+.closed .post-title {
+
+}
+
+.post-subtitle {
+  font-family: ;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+
+  padding-bottom: 1rem;
+}
+
+.closed .post-subtitle {
+  display: none;
+}
+
+.post-date {
+  color: #424242;
+  font-family: ;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: ;
+
+  padding-bottom: 2rem;
+}
+
+.closed .post-date {
+
+}
+
+.post-content.box {
+  flex-direction: column;
+}
+
+.closed .post-content.box {
+  display: none;
+}
+
+.post-toggle.box {
+  justify-content: flex-end;
+}
+
+.post-toggle.button {
+  color: #999999;
+  font-family: ;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.post-toggle.button:hover {
+  color: black;
+}
 
 
 
