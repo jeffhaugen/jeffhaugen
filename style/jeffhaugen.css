@@ -10,7 +10,7 @@
  /* H E A D E R */
 
 .header {
-  width: 100%;
+  /*width: 100%;*/
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
@@ -124,7 +124,7 @@
 
 
 
-.--sizer {
+/*.--sizer {
   max-width: 75%;
 }
 
@@ -138,7 +138,7 @@
   .--sizer {
     max-width: 50%;
   }
-}
+}*/
 
 .active-link {
   text-decoration: underline;
