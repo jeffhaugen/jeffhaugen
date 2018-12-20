@@ -1,3 +1,256 @@
+/*
+ * (c) 2018 Mic Ruopp
+ * created 12.19.18
+ */
+
+
+
+/* Z E R O */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote, q {
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* S A N D B O X */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  position: relative;
+}
+
+.sandbox {
+  min-height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: -apple-system-font;
+}
+
+
+/* B O X   P R O P E R T I E S */
+
+.-up-down {
+  flex-direction: column;
+}
+
+.-down-up {
+  flex-direction: column-reverse;
+}
+
+.-left-right {
+  flex-direction: row;
+}
+
+.-right-left {
+  flex-direction: row-reverse;
+}
+
+
+
+/* S A N D */
+
+.container {
+  flex-direction: column;
+  flex: 1;
+
+  /*min-width: 50%;*/
+  max-width: 900px;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  flex-direction: column;
+  flex: 1;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  flex-direction: row;
+}
+
+.-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* N A V */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+}
+
+.navlist-item {
+  flex: 1;
+  text-align: center;
+}
+
+.navlist-link {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Bootstrap is designed with portrait phones / extra small devices
      in mind as the default device. Might be good suit to follow.
      (min-width: 576px) > Breakpoint for landscape phones
@@ -6,7 +259,7 @@ https://getbootstrap.com/docs/4.0/layout/overview/
   > Responsive Breakpoints
 */
 
-
+/*
 :root {
   --red: #FF0000;
   --green: #00FF00;
@@ -201,41 +454,8 @@ li a:hover {
 
 .border-bot {
   border-bottom: 0.1rem black solid;
-}
+}*/
 
 
 /* move to jeff.css */
 
-.logo {
-  font-family: Georgia;
-  font-weight: normal;
-  letter-spacing: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.nav-link {
-  font-family: Courier;
-  font-weight: ;
-  font-size: 1.5rem;
-  letter-spacing: ;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-
-.--sizer {
-  max-width: 75%;
-}
-
-@media (min-width: 992px) {
-  .--sizer {
-    max-width: 60%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .--sizer {
-    max-width: 50%;
-  }
-}
