@@ -8,9 +8,10 @@
 // }
 
 function onToggleClick(e) {
-	let status = this.getAttribute("value")
+	let post = this.parentElement
 
-	let post = this.parentElement.parentElement
+	let button = this.getElementsByClassName("post-toggle button")[0]
+	let status = button.getAttribute("value")
 
 	let title    = post.getElementsByClassName("post-title")[0]
 	let subtitle = post.getElementsByClassName("post-subtitle")[0]
@@ -31,8 +32,8 @@ function onToggleClick(e) {
 
 			post.classList.add("closed")
 
-			this.innerHTML = "+"
-			this.setAttribute("value", "closed")
+			button.innerHTML = "&#9660;"
+			button.setAttribute("value", "closed")
 			break
 
 		case "closed":
@@ -48,8 +49,8 @@ function onToggleClick(e) {
 
 			post.classList.remove("closed")
 
-			this.innerHTML = "-"
-			this.setAttribute("value", "open")
+			button.innerHTML = "&#9650;"
+			button.setAttribute("value", "open")
 			break
 
 		default: 
@@ -61,7 +62,7 @@ function onToggleClick(e) {
 
 
 function main() {
-	let postToggleButtons = document.getElementsByClassName("post-toggle button")
+	let postToggleButtons = document.getElementsByClassName("post-toggle box")
 
 	for (index = 0; index < postToggleButtons.length; index++) {
 		postToggleButtons[index].addEventListener("click", onToggleClick, false)

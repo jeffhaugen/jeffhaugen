@@ -80,11 +80,6 @@
   padding-bottom: 4rem;
 }
 
-.main p {
-  text-indent: 2rem;
-  padding-bottom: 1rem;
-}
-
 
 
 /* F O O T E R */
@@ -108,15 +103,25 @@
 
 /*.open {
   display: initial;
-}
+}*/
 
 .closed {
-  display: none;
+
 }
-*/
+
 .post {
   display: flex;
   flex-direction: column;
+  border-bottom: 0.1rem solid #999999;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post p {
+  text-indent: 2rem;
+  padding-bottom: 1rem;
 }
 
 .post-title {
@@ -156,7 +161,7 @@
 }
 
 .closed .post-date {
-
+  padding-bottom: 0.5rem;
 }
 
 .post-content.box {
@@ -168,26 +173,57 @@
 }
 
 .post-toggle.box {
-  justify-content: flex-end;
+  justify-content: center;
+  color: #999999;
+}
+
+.post-toggle.box:hover {
+  background-color: #dfdfdf;
+  color: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .post-toggle.button {
-  color: #999999;
+  background-color: inherit;
+  color: inherit;
   font-family: ;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
 .post-toggle.button:hover {
-  color: black;
+  /*color: black;*/
 }
 
 
 
+/* C O N T A C T */
 
+.contact.box {
+  flex-direction: column;
 
+  /*font-size: 2rem;*/
 
+  padding-left: 4rem;
+}
 
+.contact i {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.contact i:hover {
+  color: #999999;
+  cursor: pointer;
+}
+
+.contact-email,
+.contact-twitter,
+.contact-instagram,
+.contact-linkedin {
+  align-items: center;
+}
 
 
 
