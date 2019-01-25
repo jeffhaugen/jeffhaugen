@@ -1,0 +1,73 @@
+/*
+ * Copyright (c) 2019 Mic Ruopp
+ * Created January 11, 2019
+ */
+
+/* ♥ */
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: block;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: inherit;
+  /* flex: 1 0 auto;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  
+  color: inherit;
+  font: inherit;
+}
+
+.rigid.box {
+  flex: 0 0 auto;
+}
+
+.fluid.box {
+  flex: 1 0 auto;
+}
+
+.shrink.box {
+  flex: 0 1 auto;
+}
+
+.magic.box {
+  flex: 1 1 auto;
+}
+
+
+
+
+
+
+/* Testing */
+
+.nav.box {
+  flex-direction: column;
+}
+
+.sticky.box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+}
+
+.tall.box {
+  height: 1000px;
+}
+
+.text.box {
+  flex: 0 1 auto;
+  flex-direction: column;
+}
+

@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2019 Mic Ruopp
+ * Created January 17, 2019
+ */
+
+
+
+:root {
+  --helv: Helvetica, sans-serif;
+
+
+
+  --blue: rgba(0, 0, 255, 1.0);
+  --ltbluishgrey: rgba(223, 223, 239, 1.0);
+
+  --active: rgba(255, 0, 255, 1.0);
+}

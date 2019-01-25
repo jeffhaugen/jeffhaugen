@@ -1,116 +1,103 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 
   <!-- M E T A -->
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-  <!-- T I T L E / F A V I C O N -->
-
+  <!-- T I T L E -->
   <title>Jeff Haugen</title>
 
-
-
   <!-- S T Y L E -->
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
-  <link rel="stylesheet" href="style/sandbox.css">
-  <link rel="stylesheet" href="style/jeffhaugen.css">
-
+  <link rel="stylesheet" href="sandbox/sandbox.css">
+  <link rel="stylesheet" href="style.css">
 
 
   <!-- S C R I P T -->
-
-  <script src="script/jeffhaugen.js"></script>
+  <script src="app.js"></script>
 
 
 </head>
+
 <body>
 
-  <div class="sandbox">
+  <div id="sandbox" class="jff sand box">
 
-    <div class="container box">
-
-      <header class="header box">
-        
-        <div class="title box">
-          <h1 class="title-text">
-            <a href="index.html">
-              Jeff Haugen
-            </a>
-          </h1>
-        </div>
-
-        <nav class="nav box">
-          <ul class="navlist">
-            <li class="navlist-item">
-              <a href="about.html" class="navlist-link">
-                About
-              </a>
-            </li>
-            <li class="navlist-item">
-              <a href="blog.html" class="navlist-link">
-                Blog
-              </a>
-            </li>
-            <li class="navlist-item">
-              <a href="contact.html" class="navlist-link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-      </header>
-
-      <main class="main box">
-
+    <header class="box">
+      <div class="title box">
+        <h1 class="title">
+          <a href="" class="nav link">Jeff Haugen</a>
+        </h1>
+      </div>
+      <div class="nav box">
+        <ul class="nav list">
+          <li class="nav item">
+            <a href="about" class="nav link">About</a>
+          </li>
+          <li class="nav item">
+            <a href="blog" class="nav link">Blog</a>
+          </li>
+          <li class="nav item">
+            <a href="contact" class="nav link --active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="box">
+      <div id="page" class="box">
         <div class="contact box">
-
-          <div class="contact-email box">
-            <i class="far fa-envelope"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fas fa-envelope-square"></i>
-            <span>[email]</span>
-          </div>
-
-          <div class="contact-twitter box">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-twitter-square"></i>
-            <span>[twitter handle]</span>
-          </div>
-
-          <div class="contact-instagram box">
-            <i class="fab fa-instagram"></i>
-            <span>[instagram handle]</span>
-          </div>
-
-          <div class="contact-linkedin box">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-linkedin"></i>
-            <span>[linkedin handle]</span>
-          </div>
-          
+          <a href="mailto:jeffhaugen23@gmail.com" class="box">
+            <div class="icon box">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="tag box">
+              <span>jeffhaugen23@gmail.com</span>
+            </div>
+          </a>
         </div>
-        
-      </main>
-
-      <footer class="footer box">
-        
-        <div class="copyright box">
-          &#169 2018 Mic Ruopp
+        <div class="contact box">
+          <a href="https://twitter.com/jeffhaugen23" class="box">
+            <div class="icon box">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="tag box">
+              <span>@jeffhaugen23</span>
+            </div>
+          </a>
         </div>
-
-      </footer>
-
-    </div>
+        <div class="contact box">
+          <a href="https://www.instagram.com/jeffhaugen23/" class="box">
+            <div class="icon box">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="tag box">
+              <span>@jeffhaugen23</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact box">
+          <a href="https://www.linkedin.com/in/jeffhaugen23" class="box">
+            <div class="icon box">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="tag box">
+              <span>/jeffhaugen23</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="box">
+      <div class="copyright box">
+        <span>Copyright &#169; 2019</span>
+      </div>
+    </footer>
 
   </div>
   
 </body>
+
 </html>

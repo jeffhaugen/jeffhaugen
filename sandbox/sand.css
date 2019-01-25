@@ -1,0 +1,62 @@
+/*
+ * Copyright (c) 2019 Mic Ruopp
+ * Created January 11, 2019
+ */
+
+
+
+.sand.box {
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sand {
+  font-family: var(--helv);
+}
+
+.sand a {
+  padding: 0.5rem;
+}
+.sand a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.sand p {
+  
+}
+
+.sand ol, 
+.sand ul {
+  position: relative;
+  display: flex;
+  flex-direction: inherit;
+}
+
+.sand li {
+  display: flex;
+  flex: 1;
+}
+
+.sand header {
+  flex: 0 0 auto;
+}
+
+.sand main {
+  flex: 1 0 auto;
+}
+
+.sand footer {
+  flex: 0 0 auto;
+}
+
+
+/* Testing */
+
+.sand .text.box p {
+  text-indent: 2rem;
+  line-height: 1.5rem;
+}
+
+

@@ -1,90 +1,77 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 
   <!-- M E T A -->
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-  <!-- T I T L E / F A V I C O N -->
-
+  <!-- T I T L E -->
   <title>Jeff Haugen</title>
 
-
-
   <!-- S T Y L E -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
-  <link rel="stylesheet" href="style/sandbox.css">
-  <link rel="stylesheet" href="style/jeffhaugen.css">
-
+  <link rel="stylesheet" href="sandbox/sandbox.css">
+  <link rel="stylesheet" href="style.css">
 
 
   <!-- S C R I P T -->
+  <script src="app.js"></script>
 
-  <script src="script/jeffhaugen.js"></script>
 
-  
 </head>
+
 <body>
 
-  <div class="sandbox">
+  <div id="sandbox" class="jff sand box">
 
-    <div class="container box">
-
-      <header class="header box">
-        
-        <div class="title box">
-          <h1 class="title-text">
-            <a href="index.html">
-              Jeff Haugen
-            </a>
-          </h1>
+    <header class="box">
+      <div class="title box">
+        <h1 class="title">
+          <a href="" class="nav link">Jeff Haugen</a>
+        </h1>
+      </div>
+      <div class="nav box">
+        <ul class="nav list">
+          <li class="nav item">
+            <a href="about" class="nav link --active">About</a>
+          </li>
+          <li class="nav item">
+            <a href="blog" class="nav link">Blog</a>
+          </li>
+          <li class="nav item">
+            <a href="contact" class="nav link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="box">
+      <div id="page" class="box">
+        <div class="about box">
+          <div id="headshot" class="frame box">
+            <img src="assets/images/headshot.jpeg">
+          </div>
+          <div class="text box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at fringilla libero, eget ultricies ante. Cras ut ex at massa porta mollis. Curabitur ut leo urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in risus at dolor tempus facilisis in egestas metus. Curabitur hendrerit augue tortor, ut pharetra nisl pretium et. Sed finibus quam magna, sit amet efficitur arcu tempor eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent pretium, mauris a tempor condimentum, sem felis bibendum magna, non aliquet lorem diam id ante. Sed feugiat lacus vel ligula eleifend, quis rhoncus massa interdum. Quisque tincidunt, sapien et cursus tristique, massa nulla convallis enim, ut pretium ante velit eget tortor. Sed dui turpis, fringilla quis erat non, tempus elementum velit. Nulla imperdiet metus et odio iaculis venenatis.
+            </p>
+            <p>
+              Sed mollis in massa vel volutpat. Donec at lectus lacinia, convallis erat at, porttitor enim. Etiam metus quam, interdum sed feugiat eu, gravida sit amet sem. Nam finibus pulvinar tortor, in lobortis risus. Sed viverra ligula a feugiat finibus. Aenean auctor odio risus, id tincidunt nunc pharetra ut. Nunc sagittis non sapien eget porta. Maecenas vestibulum, tortor quis ornare varius, ligula tellus feugiat purus, et vulputate est elit et augue. Vivamus commodo felis ut tellus bibendum, id pretium urna varius. Curabitur vitae dui eu mi euismod egestas. Donec ornare fermentum pharetra. Ut fermentum ullamcorper volutpat.
+            </p>
+          </div>
         </div>
-
-        <nav class="nav box">
-          <ul class="navlist">
-            <li class="navlist-item">
-              <a href="about.html" class="navlist-link">
-                About
-              </a>
-            </li>
-            <li class="navlist-item">
-              <a href="blog.html" class="navlist-link">
-                Blog
-              </a>
-            </li>
-            <li class="navlist-item">
-              <a href="contact.html" class="navlist-link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-      </header>
-
-      <main class="main box">
-
-        <div class="box -center">
-          <p>{ABOUT ME}</p>
-        </div>
-        
-      </main>
-
-      <footer class="footer box">
-        
-        <div class="copyright box">
-          &#169 2018 Mic Ruopp
-        </div>
-
-      </footer>
-
-    </div>
-
+      </div>
+    </main>
+    <footer class="box">
+      <div class="copyright box">
+        <span>Copyright &#169; 2019</span>
+      </div>
+    </footer>
+    
+    
   </div>
   
 </body>
+
 </html>
