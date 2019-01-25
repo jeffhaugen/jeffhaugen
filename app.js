@@ -30,6 +30,9 @@ function app() {
 
 		let pathIndex = href.lastIndexOf("/");
 		let path = href.slice(pathIndex + 1); // `+ 1` to remove the slash
+		if (path === "") {
+			path = "index";
+		}
 		let pathType = ".html";
 
 		let base = "/";
@@ -42,7 +45,12 @@ function app() {
 
 		// history.pushState(state, title, url);
 
+		console.log(path);
+
 		switch(path) {
+		case "index":
+			loc.assign(url);
+			break;
 		case "about":
 			loc.assign(url);
 			break;
@@ -105,6 +113,9 @@ function app() {
 		let href = loc.href;
 		let pathIndex = href.lastIndexOf("/");
 		let path = href.slice(pathIndex + 1); // `+ 1` to remove the slash
+		if (path === "") {
+			path = "index";
+		}
 
 		let typeIndex = path.lastIndexOf(".");
 		let route = path.slice(0, typeIndex);
@@ -112,6 +123,8 @@ function app() {
 		console.log(route);
 
 		switch(route) {
+		case "index":
+			break;
 		case "about":
 			break;
 		case "blog":
