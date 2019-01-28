@@ -6,7 +6,7 @@
 
  */
 
-
+@import url('https://fonts.googleapis.com/css?family=Amiri');
 
  /* Element Level */
 
@@ -19,6 +19,9 @@
   --border-med: 0.1rem solid var(--grey);
 
   --border-med-trans: 0.1rem solid transparent;
+
+  --serif: 'Amiri', serif;
+  --sans-serif: Avenir, sans-serif;
 }
 
 html {
@@ -36,7 +39,6 @@ html {
 }
 
 .jff a:hover {
-  cursor: pointer;
   color: var(--hover);
 }
 
@@ -58,24 +60,24 @@ html {
 }
 
 .jff main.box {
-  padding: 2.5rem 0 3rem 0;
+  padding: 1.5rem 0 3rem 0;
 }
 
 .jff footer.box {
   border-top: var(--border-thin);
-  font-family: Avenir;
+  font-family: var(--sans-serif);
 }
 
 .jff .title.box {
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0 1.5rem 0;
   text-align: center;
 }
 
 .jff .title {
-  font-family: Palatino, serif;
-  font-size: 3rem;
+  font-family: var(--serif);
+  font-size: 4rem;
   font-weight: 600;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 .jff .title a:hover {
@@ -105,7 +107,7 @@ html {
   margin: 0 0 0.5rem 0;
   padding: 1rem 1rem 0.5rem 1rem;
 
-  font-family: Avenir, sans-serif;
+  font-family: var(--sans-serif);
   font-size: 1.15rem;
   font-weight: 100;
   text-transform: uppercase;
@@ -156,10 +158,11 @@ html {
 
 .jff .about .text.box {
   max-width: 600px;
-  font-family: Palatino;
+  font-family: var(--serif);
 }
 
 .jff .about .text.box p {
+  font-size: 1.15rem;
   text-indent: 0;
   padding: 0 0 1rem 0;
 }
@@ -180,7 +183,7 @@ html {
 }
 
 .jff .post .title {
-  font-family: Avenir, sans-serif;
+  font-family: var(--sans-serif);
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.25rem;
@@ -193,7 +196,7 @@ html {
 
 .jff .post .date {
   color: var(--grey);
-  font-family: Avenir, sans-serif;
+  font-family: var(--sans-serif);
   font-size: 1rem;
   font-weight: 100;
 }
@@ -206,12 +209,17 @@ html {
   padding: 0 0 0 0.5rem;
 }
 
+.jff .post .content ol {
+  padding: 0 0 0 0.5rem;
+  list-style: decimal inside;
+}
+
 .jff .post .content li {
   padding: 1rem 0;
 }
 
 .jff .post .content h1 {
-  font-family: Avenir, sans-serif;
+  font-family: var(--sans-serif);
   font-size: 1.25rem;
   font-weight: ;
 }
@@ -226,8 +234,8 @@ html {
 
 .jff .post .content p {
   padding: 0 0 1rem 0;
-  font-family: Palatino, serif;
-  font-size: 1.05rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
 }
 
 .jff .post .content q {
@@ -262,7 +270,7 @@ html {
 }
 
 .jff .contact.box {
-  font-family: Avenir;
+  font-family: var(--sans-serif);
   flex-grow: 0;
   margin: 0;
 }
