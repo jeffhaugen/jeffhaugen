@@ -77,7 +77,8 @@ html {
   font-family: var(--serif);
   font-size: 4rem;
   font-weight: 600;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
 }
 
 .jff .title a:hover {
